@@ -1,0 +1,25 @@
+body {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-weight: 400;
+}
+
+h2, h3 {
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+header .slogan {
+    color: #ff3333;
+    font-style: italic;
+    line-height: 23px;
+    font-size: 16px;
+}
