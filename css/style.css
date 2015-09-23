@@ -14,13 +14,30 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+
     font-size: 13px;
     font-family: 'Cuprum', 'Tahoma', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 24px;
 
-    min-width: 1200px;
     background-color: #fff;
+}
+
+p,
+ul,
+h3,
+h2,
+input,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-size: 13px;
 }
 
 h2, h3 {
@@ -55,11 +72,18 @@ footer {
 /* Header */
 
 header {
-
+    background-color: #f1f5f7;
 }
 
 .status-bar {
+    min-height: 42px;
+    margin-bottom: 47px;
+    background-color: #333333;
+}
 
+.status-bar a, .status-bar form {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .status-bar .logo {
@@ -68,6 +92,11 @@ header {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+
+    width: 116px;
+    padding: 8px 52px 8px 52px;
+    background-color: #ff3333;
+    box-shadow: #ca2c37 0 5px 0 0;
 }
 
 .status-bar .search input {
@@ -85,15 +114,183 @@ header {
     text-decoration: none;
 }
 
+.status-bar .cart-items-counter {
+    position: relative;
+    width: 150px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 44px;
+}
+
 header .slogan {
+    float: left;
+    width: 220px;
+    margin-right: 50px;
+    padding-left: 50px;
+
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
     color: #ff3333;
 }
 
+header .market-bar {
+    margin-bottom: 44px;
+}
 
+header nav {
+    padding-left: 21px;
+    margin-bottom: 60px;
 
+    font-size: 0;
+    background-color: #333366;
+    border-bottom: 5px solid #333333;
+}
+
+header nav a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 18px 32px;
+
+    font-size: 16px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .contacts {
+    float: left;
+    width: 270px;
+    margin-right:  67px;
+}
+
+.contacts .phone {
+    position: relative;
+    margin-bottom: 5px;
+    padding: 8px 10px 9px 70px;
+    border: 3px solid #fff;
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ff3333;
+}
+
+.contacts .address {
+    padding-left: 8px;
+    margin-top: -2px;
+
+    font-size: 14px;
+    color: #333366;
+}
+
+.actions {
+    width: 105px;
+    display: flex;
+}
+
+.actions .registration {
+    display: inline-flex;
+
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #ffffff;
+
+    font-size: 21px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000;
+}
+
+.actions .login {
+    margin-right: 10px;
+    display: inline-flex;
+
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 48px;
+    padding-right: 27px;
+    background-color: #ffffff;
+
+    font-size: 21px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000;
+}
+
+.actions .login:before {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    font-size: 20px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\241b";
+    opacity: .3;
+    color: #000000;
+}
+
+.paint, .tool, .vehicle, .cart, .bus {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    min-height: 101px;
+    margin-right: 20px;
+    padding-top: 23px;
+    padding-left: 23px;
+    overflow: hidden;
+}
+
+.paint, .bus {
+    background-color: #ff9933;
+}
+
+.tool {
+    background-color: #3399cc;
+}
+
+.vehicle {
+    background-color: #cc66cc;
+}
+
+.cart {
+    background-color: #99cc66;
+}
+
+.new:before {
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+    top: 10px;
+    right: -30px;
+    color: #fff;
+    content: "new";
+    background-color: #ff3333;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.row div:last-child {
+    margin-right: 0;
+}
 /* Icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "symbols-technomart";

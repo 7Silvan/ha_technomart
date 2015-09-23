@@ -5,64 +5,53 @@
   <title>Техномарт</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://www.google.com/fonts#UsePlace:use/Collection:Cuprum:400,400italic,700">
+  <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet">
 </head>
 <body>
-<header class="navigation">
+<header>
   <div class="status-bar">
-    <a href="#" class="logo">Техномарт</a>
+    <div class="container">
+      <a href="#" class="logo">Техномарт</a>
 
-    <form name="searchForm" class="search">
-      <button type="submit">Искать</button>
-      <input placeholder="Поиск">
-    </form>
-    <div class="bookmarks-counter">
-      <span class="bookmark-icon">Закладки: 0</span>
-    </div>
-    <div class="cart-items-counter">
-      <span class="cart-icon">Корзина: 0</span>
-    </div>
-    <div class="make-order-button">
-      <a href="#">Оформить заказ</a>
+      <form name="searchForm" class="search">
+        <button type="submit">Искать</button>
+        <input placeholder="Поиск">
+      </form>
+      <a href="#" class="bookmarks-counter bookmark-icon">Закладки: 0</a>
+      <a href="#" class="cart-items-counter cart-icon">Корзина: 0</a>
+      <a href="#" class="make-order-button">Оформить заказ</a>
     </div>
   </div>
-  <div class="market-bar">
-    <div class="slogan">
-      <p>Интернет магазин строительных материалов и инструментов для ремонта</p>
-    </div>
-    <div class="contacts">
-      <div class="phone">+7 (812) 555-05-55</div>
-      <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-    </div>
-    <div class="user">
-      <div class="user-info">
-        <span class="small-icon user-icon"></span>
-        <span class="login">Равшан Джамшутович</span>
-        <a href="#">
-          <span class="small-icon logout-icon"></span>
-        </a>
+  <div class="container">
+    <div class="market-bar clearfix">
+      <div class="slogan">
+        <p>Интернет магазин строительных материалов<br>и инструментов для ремонта</p>
       </div>
-      <ul>
-        <li><a href="#">Мои заказы</a></li>
-        <li><a href="#">Личный кабинет</a></li>
-      </ul>
+      <div class="contacts">
+        <div class="phone">+7 (812) 555-05-55</div>
+        <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+      </div>
+      <div class="actions">
+        <a href="#" class="login button">Войти</a>
+        <a href="#" class="registration button">Регистрация</a>
+      </div>
     </div>
+    <nav>
+      <a href="#" class="active">Главная</a>
+      <a href="#">Компания</a>
+      <a href="#">Каталог</a>
+      <a href="#">Новости</a>
+      <a href="#">Спецпредложения</a>
+      <a href="#">Доставка</a>
+      <a href="#">Контакты</a>
+    </nav>
   </div>
-  <nav>
-    <a href="#" class="active">Главная</a>
-    <a href="#">Компания</a>
-    <a href="#">Каталог</a>
-    <a href="#">Новости</a>
-    <a href="#">Спецпредложения</a>
-    <a href="#">Доставка</a>
-    <a href="#">Контакты</a>
-  </nav>
 </header>
 
 <section class="container">
   <section class="shop-part">
     <div class="marketing">
-      <div class="row">
+      <div class="row clearfix">
         <div class="paint new">
           <h3>Материалы</h3>
           <a href="#">На любой вкус</a>
@@ -76,7 +65,7 @@
           <a href="#">Для стройки</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row clearfix">
         <div class="slider">
           <div class="slider-inner">
             <h3>Дрели</h3>
